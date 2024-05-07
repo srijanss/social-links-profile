@@ -1,0 +1,17 @@
+{
+  "name": "social-links-profile-main",
+  "version": "1.0.0",
+  "description": "Challenge to create social links profile and match it to design",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=8080 --host=localhost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "social",
+    "links",
+    "profile"
+  ],
+  "author": "Srijan Manandhar",
+  "license": "MIT"
+}
