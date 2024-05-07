@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --button-color: hsl(0, 0%, 20%);
+  --card-color: hsl(0, 0%, 12%);
+  --background-color: hsl(0, 0%, 8%);
+  --off-black: hsl(0, 0%, 8%);
+  /* --primary-color: #ff6700;
+  --white: hsl(0, 0%, 100%);
+  --button-color: #3a6ea5;
+  --card-color: #004e98;
+  --background-color: #ebebeb;
+  --off-black: hsl(0, 0%, 8%); */
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --card-width-mobile: 327px;
+  --card-height-mobile: 579px;
+  --card-width: 384px;
+  --card-height: 611px;
+  --card-link-height: 45px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--white);
+  background-color: var(--background-color);
+  padding-top: 116px;
+}
+
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+}
+
+.card {
+  width: var(--card-width-mobile);
+  height: var(--card-height-mobile);
+  margin: 0 auto;
+  background-color: var(--card-color);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+}
+.card__profile-pic {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.card__name {
+  font-size: 24px;
+  font-weight: var(--font-weight-semi-bold);
+  text-align: center;
+}
+.card__location {
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color);
+  text-align: center;
+  font-style: normal;
+}
+.card__bio {
+  text-align: center;
+}
+.card__links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card__links a {
+  width: 100%;
+  height: var(--card-link-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-weight: var(--font-weight-semi-bold);
+  background-color: var(--button-color);
+  color: var(--white);
+  text-align: center;
+}
+.card__links a:hover,
+.card__links a:focus {
+  background-color: var(--primary-color);
+  color: var(--off-black);
+}
+
+@media (min-width: 376px) {
+  body {
+    padding-top: 174px;
+  }
+  .card {
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 40px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
